@@ -1,7 +1,7 @@
 BIN=icos
 
 all:
-	gcc -Wall -O3 -o $(BIN) $(BIN).c -lglut -lGLU
+	gcc -Wall -O3 -o $(BIN) $(BIN).c -lglut -lGL -lGLU -lm
 
 clean:
-	rm -f $(BIN)
+	$(RM) $(BIN)
